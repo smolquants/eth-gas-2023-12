@@ -1,0 +1,19 @@
+name: eth-gas-2023-12
+
+plugins:
+  - name: alchemy
+  - name: foundry
+  - name: notebook
+
+default_ecosystem: ethereum
+
+ethereum:
+  default_network: mainnet-fork
+  mainnet_fork:
+    default_provider: foundry
+
+foundry:
+  fork:
+    ethereum:
+      mainnet:
+        upstream_provider: alchemy
